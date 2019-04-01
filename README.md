@@ -1,24 +1,25 @@
 
-##usersテーブル
+## usersテーブル
 
-|column|type|options|
+|Column|Type|Options|
 |name|text|null: false|
 
 has_many   :groups
 belongs_to :user
 
 
-##groupsテーブル
+## groupsテーブル
 
+|Column|Type|Options|
 |name|text|null: false|
 
 has_many   :users
 belongs_to :group
 
 
-##messagesテーブル
+## messagesテーブル
 
-|column|type|opitin|
+|Column|Type|Options|
 |body|text|null: false|
 |image|string|null: true|
 |group_id|integer|null: false|
@@ -30,7 +31,7 @@ has_many   :groups
 
 ## membersテーブル
 
-|column|type|options|
+|Column|Type|Options|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
