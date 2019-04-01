@@ -2,41 +2,45 @@
 ## usersテーブル
 
 |Column|Type|Options|
+|------|----|-------|
 |name|text|null: false|
 
-has_many   :groups
-belongs_to :user
+-has_many   :groups
+-belongs_to :user
 
 
 ## groupsテーブル
 
 |Column|Type|Options|
+|------|----|-------|
 |name|text|null: false|
 
-has_many   :users
-belongs_to :group
+-has_many   :users
+-belongs_to :group
 
 
 ## messagesテーブル
 
 |Column|Type|Options|
+|------|----|-------|
 |body|text|null: false|
 |image|string|null: true|
 |group_id|integer|null: false|
 |user_id|integer|null: false|
 
-has_many   :users
-has_many   :groups
+-has_many   :users
+-has_many   :groups
 
 
 ## membersテーブル
 
 |Column|Type|Options|
+|------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-belongs_to :group
-belongs_to :user
+-belongs_to :group
+-belongs_to :user
 
 
 
