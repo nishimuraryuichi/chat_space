@@ -3,7 +3,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false|
+|name|text|null: false,index: true,unique: true|
 
 - has_many :messages
 - has_many :members
@@ -25,7 +25,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text||
 |image|string|null: true|
 |group_id|references|null: false|
 |user_id|references|null: false|
