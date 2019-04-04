@@ -1,6 +1,6 @@
 
 ## usersテーブル
-
+jiji
 |Column|Type|Options|
 |------|----|-------|
 |name|text|null: false,index: true,unique: true|
