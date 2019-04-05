@@ -2,13 +2,13 @@
   .side-header
     .side-header__box
       .side-header__box__user-name
-        muu
+        = current_user.name
       .side-header__box__menu
         .side-header__box__menu__edit-user
           %i.fa.fa-edit
-          %a{:href => '/' }
         .side-header__box__menu__new-group
-          %i.fa.fa-cog
+          = link_to edit_user_path(current_user) do
+            = fa_icon 'cog', class: 'icon'
   .groups
     %a
       .group
