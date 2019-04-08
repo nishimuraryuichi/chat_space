@@ -17,10 +17,12 @@
             display: flex;
               &__edit-user{
                   cursor: pointer;
+                  a{color:white;}
               }
               &__new-group{
                   cursor: pointer;
                   margin-left: 0.3rem;
+                  a{color:white;}
               }
           }
       }
@@ -31,20 +33,18 @@
     padding: 20px 20px 0;
     overflow: scroll;
     .group{
-      margin-bottom: 40px;
-      &__group-name{
-        font-size: 15px;
-        margin-bottom: 5px;
-        cursor: pointer;
-        color:white;
-
-      }
-      &__latest-message{
-        font-size: 11px;
-        cursor: pointer;
-        color:white;
-
-      }
+        &__group-name{
+          font-size: 15px;
+          margin-bottom: 5px;
+          cursor: pointer;
+          color:white;
+        }
+        &__latest-message{
+          font-size: 11px;
+          cursor: pointer;
+          color:white;
+          padding-bottom: 40px;
+        }
     }
   }
 

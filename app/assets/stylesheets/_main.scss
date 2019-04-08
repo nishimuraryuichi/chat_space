@@ -57,42 +57,52 @@
         }
 
       }
-
     }
-
-
     .form{
-       height: 50px;
-       padding: 20px 40px;
-       background-color: #ddd;
-        .new_message{
-          display: flex;
-            .input-box{
-              width:100%;
-              position: relative;
-                .message_form {
-                  width: calc(100% - 15px);
-                  height:50px;
-                  padding-left: 10px;
-                }
-                &__image{
-                    cursor: pointer;
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    font-size: 1.3rem;
-                }
-            }
-            .btn{
-              float:right;
-              padding:0 30px;
-              margin-left: 15px;
-              color:white;
-              background-color: #38aef0;
-              width:100px;
-              height: 50px;
-              cursor: pointer;
-            }
-        }
-    }
+     height: 90px;
+     background-color:#ddd;
+     display: flex;
+     padding: 20px 40px;
+     box-sizing: border-box;
+     .new-message{
+       display: flex;
+       width: 100%;
+       form{
+         display:flex;
+       }
+       .input-box{
+         position: relative;
+         width: 100%;
+         & input{
+           height: 50px;
+           color: #434a54;
+           padding: 0 40px 0 10px;
+           box-sizing: border-box;
+           border-style: none;
+           width: 100%;
+         }
+         .image-box{
+           position: absolute;
+           top: 0; bottom: 0; right: 60px;
+           line-height: 50px;
+           padding: 0 10px;
+           box-sizing: border-box;
+           & label{
+             cursor : pointer;
+           }
+           & input{
+             display: none;
+           }
+         }
+         .submit-btn {
+           width: 100px;
+           height: 50px;
+           padding: 0 23px;
+           margin-left: 15px;
+           background-color: #38aef0;
+           color: white;
+         }
+       }
+     }
+   }
 }
