@@ -46,8 +46,7 @@ $(function(){
       var html = buildHTML(data);
       $('.messages').append(html)
       $('.messages').animate({scrollTop: 1000000},'slow')
-      // $('#message_content')[0].reset('');
-      $('#message_content').val('')
+      $('.new_message')[0].reset();
     })
     .fail(function(){
     alert('自動更新に失敗しました')
