@@ -2,19 +2,17 @@
   .main-header
     .main-header__left-box
       .main-header__left-box__current-group
-        a
+        = @group.name
       .main-header__left-box__member-list
         Member:
         .main-header__left-box__member-list__member
-          aaa
-        .main-header__left-box__member-list__member
-          aaaa
-        .main-header__left-box__member-list__member
-          aaa
-        .main-header__left-box__member-list__member
-          muu
+          - @group.users.each do |user|
+            =user.name
     .main-header__edit-btn
-      Edit
+      = link_to edit_group_path(@group) do
+        Edit
+
+
 
   .messages
     - @messages.each do |message|
