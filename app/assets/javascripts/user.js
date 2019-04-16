@@ -50,7 +50,6 @@ $(function(){
     name = this.dataset.userName
     id = this.dataset.userId
     incre = add(name,id)
-    console.log(incre)
     $('.incre').remove();
     $('#chat-group-users').append(incre)
   })
