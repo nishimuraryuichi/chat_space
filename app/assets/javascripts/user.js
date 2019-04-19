@@ -45,7 +45,6 @@ $(function(){
 
 
 
-
   $('#user-search-result').on('click','.user-search-add.chat-group-user__btn.chat-group-user__btn--add' , function(){
     name = this.dataset.userName
     id = this.dataset.userId
