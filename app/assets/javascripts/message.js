@@ -88,7 +88,7 @@ $(function(){
     })
 
     .fail(function() {
-      console.log('erroraaa');
+      alert('error');
     });
   };
 
