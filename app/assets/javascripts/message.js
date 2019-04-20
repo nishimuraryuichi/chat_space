@@ -44,7 +44,7 @@ $(function(){
     })
 
     .fail(function(){
-    alert('エラー')
+    console.log('エラー')
     })
   });
 
@@ -88,7 +88,7 @@ $(function(){
     })
 
     .fail(function() {
-      alert('error');
+      console.log('error');
     });
   };
 
